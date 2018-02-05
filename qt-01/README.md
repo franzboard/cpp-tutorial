@@ -2,7 +2,7 @@
 
 ## Install qt:
 ```
-sudo apt update && sudo apt install qt5-default -y
+sudo apt update && sudo apt install qt5-default qtcreator -y
 ```
 
 ## Prepare environment and compile

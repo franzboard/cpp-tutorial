@@ -16,4 +16,6 @@ Binary to decimal converter.
 ## qt-05
 Stop watch.
 
+## qt-06
+Control Raspberry GPIO pins (LEDs) via Qt Widget
 

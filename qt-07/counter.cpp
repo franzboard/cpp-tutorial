@@ -20,7 +20,6 @@ Counter::Counter(QWidget *parent) :
     connect(m_down, SIGNAL(stateChanged()), this, SLOT(on_pushButtonUp_clicked()));
 }
 
-// Connect GUI pushbuttons to GUI display
 Counter::~Counter()
 {
     delete m_up;
@@ -28,6 +27,7 @@ Counter::~Counter()
     delete m_down;
 }
 
+// Connect GUI pushbuttons to GUI display
 void Counter::on_pushButtonDown_clicked()
 {
     m_counter--;

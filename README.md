@@ -17,5 +17,9 @@ Binary to decimal converter.
 Stop watch aka "My First Slot"
 
 ## qt-06
+Checkboxes:
 Control Raspberry GPIO pins (LEDs) via Qt Widget
 
+## qt-07
+Counter:
+Read Raspberry GPIO pins (Buttons) via Qt Widget

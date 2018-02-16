@@ -23,3 +23,7 @@ Control Raspberry GPIO pins (LEDs) via Qt Widget
 ## qt-07
 Counter:
 Read Raspberry GPIO pins (Buttons) via Qt Widget
+
+## ds1820
+Console application for reading ds18x20 onwire sensor values
+

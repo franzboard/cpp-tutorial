@@ -25,5 +25,8 @@ Counter:
 Read Raspberry GPIO pins (Buttons) via Qt Widget
 
 ## ds1820
-Console application for reading ds18x20 onwire sensor values
+console application for reading ds18x20 onwire sensor values
+
+## qt-08
+Widget for reading ds18x20 onwire sensor values
 

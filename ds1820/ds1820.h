@@ -4,19 +4,14 @@
 #include <string>
 using namespace std;
 
-typedef struct {
-    string id;
-    float temp;
-} sensor;
-
 class ds1820
 {
 public:
     ds1820();
-    void showTemp();
+    vector<string> getIds();
+    float getTemp(string id);
 private:
-    vector<sensor> m_sensor;
-    void getTemp();
- };
+    vector<string> m_id;
+  };
 
 #endif // DS1820_H

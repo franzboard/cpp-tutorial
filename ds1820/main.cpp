@@ -3,10 +3,14 @@
 #include <vector>
 using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
     cout << "Sensorwerte" << endl;
     ds1820 onewire;
-    onewire.showTemp();
+    vector<string> sensors = onewire.getIds();
+    for(;;) {
+		for (size_t i = 0; i < sensors.size(); i++)
+			cout << sensors[i] << "->" << onewire.getTemp(sensors[i]) << endl;
+    }
     return 0;
 }

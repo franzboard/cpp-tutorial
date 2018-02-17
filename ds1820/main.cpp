@@ -9,8 +9,8 @@ int main()
     ds1820 onewire;
     vector<string> sensors = onewire.getIds();
     for(;;) {
-		for (size_t i = 0; i < sensors.size(); i++)
-			cout << sensors[i] << "->" << onewire.getTemp(sensors[i]) << endl;
+        for (size_t i = 0; i < sensors.size(); i++)
+        cout << sensors[i] << "->" << onewire.getTemp(sensors[i]) << endl;
     }
     return 0;
 }

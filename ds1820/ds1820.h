@@ -12,6 +12,6 @@ public:
     float getTemp(string id);
 private:
     vector<string> m_id;
-  };
+};
 
 #endif // DS1820_H

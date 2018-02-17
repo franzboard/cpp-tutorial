@@ -20,7 +20,7 @@ ds1820::ds1820()
 
 vector<string> ds1820::getIds()
 {
-	return m_id;
+    return m_id;
 }
 
 // return float value read from sensor file
@@ -32,19 +32,19 @@ float ds1820::getTemp(string id)
     size_t pos;
     float temp = -999;
 
-	devfile = "/sys/bus/w1/devices/" + id + "/w1_slave";
-	ifstream myfile(devfile);
-	if (myfile) {
-		getline (myfile, line);
-		if (line.find("YES") != string::npos) {
-			getline (myfile, line);
-			pos = line.find("=");
-			temp =  std::stof(line.substr(pos + 1)) / 1000.0;
-		}
-		myfile.close();
-	}
-	else
-		 cerr << "device file error" << endl;
+    devfile = "/sys/bus/w1/devices/" + id + "/w1_slave";
+    ifstream myfile(devfile);
+    if (myfile) {
+        getline (myfile, line);
+        if (line.find("YES") != string::npos) {
+            getline (myfile, line);
+            pos = line.find("=");
+            temp =  std::stof(line.substr(pos + 1)) / 1000.0;
+        }
+        myfile.close();
+    }
+    else
+        cerr << "device file error" << endl;
     return temp;
 }
 

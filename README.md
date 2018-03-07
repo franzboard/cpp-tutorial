@@ -14,19 +14,21 @@ Same as qt-02 but with user interaction.
 Binary to decimal converter.
 
 ## qt-05
-Stop watch aka "My First Slot"
+Stop watch aka "My First Slot".
 
 ## qt-06
 Checkboxes:
-Control Raspberry GPIO pins (LEDs) via Qt Widget
+Control Raspberry GPIO pins (LEDs) via Qt Widget.
 
 ## qt-07
 Counter:
-Read Raspberry GPIO pins (Buttons) via Qt Widget
+Read Raspberry GPIO pins (Buttons) via Qt Widget.
 
 ## ds1820
-console application for reading ds18x20 onwire sensor values
+console application for reading ds18x20 onewire sensor values.
 
 ## qt-08
-Widget for reading ds18x20 onwire sensor values
+Widget for reading ds18x20 onewire sensor values.
 
+## examples
+Some additional examples

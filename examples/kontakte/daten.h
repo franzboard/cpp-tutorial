@@ -6,7 +6,7 @@ typedef struct {
     QString telefon;
 } telefonbuch;
 
-telefonbuch daten[] = {
+vector<telefonbuch> daten = {
     {"BULME", "+43 316 6081"},
     {"Postgarage", "+43 316 722937"},
     {"Stadtbibliothek", "+43 316 8724980"}

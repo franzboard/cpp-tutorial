@@ -10,9 +10,9 @@ Kontakte::Kontakte(QWidget *parent) :
 void Kontakte::on_eingabe_returnPressed()
 {
     QString tel = "nicht gefunden!";
-    for (size_t i = 0; i < sizeof(daten)/sizeof(daten[0]); i++)
-            if (eingabe->text() == daten[i].name) {
-                tel = daten[i].telefon;
+    for (size_t i = 0; i < daten.size(); i++)
+            if (eingabe->text() == daten.at(i).name) {
+                tel = daten.at(i).telefon;
                 break;
             }
     ausgabe->setText(tel);

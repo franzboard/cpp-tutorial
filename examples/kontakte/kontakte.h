@@ -2,6 +2,8 @@
 #define KONTAKTE_H
 
 #include "ui_kontakte.h"
+#include <vector>
+using std::vector
 
 class Kontakte : public QWidget, private Ui::Kontakte
 {

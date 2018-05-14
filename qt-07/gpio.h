@@ -4,8 +4,6 @@
 #include <QObject>
 #include <QTimer>
 
-#define TIMEOUT 100
-
 class Gpio : public QObject
 {
     Q_OBJECT
@@ -14,7 +12,7 @@ public:
     ~Gpio();
     void write(int value);
     int read();
-    void setTrigger(int edge, int initstate = 1);
+    void setTrigger(int edge, int timeout = 100, int initstate = 1);
     void removeTrigger();
     static void setup();
 
@@ -22,19 +20,13 @@ private:
     int m_pin;
     int m_pinstate;
     int m_edge;
-    QTimer *m_timer;
+    QTimer *m_timer = NULL;
 
 private slots:
     void checkPinState();
 
 signals:
     void stateChanged();
-
-
-
-
-
-
 
 };
 

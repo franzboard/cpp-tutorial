@@ -3,7 +3,6 @@
 #include <QDebug>
 #include <QTimer>
 
-
 Gpio::Gpio(int pin, int mode)
 {
     m_pin = pin;
@@ -31,13 +30,15 @@ int Gpio::read()
 }
 
 // watch GPIO state every TIMEOUT milliseconds
-void Gpio::setTrigger(int edge, int initstate)
+void Gpio::setTrigger(int edge, int timeout, int initstate)
 {
-    m_pinstate = initstate;
-    m_edge = edge;
-    m_timer= new QTimer(this);
-    connect(m_timer, SIGNAL(timeout()), this, SLOT(checkPinState()));
-    m_timer->start(TIMEOUT);
+    if (m_timer == NULL) {
+        m_pinstate = initstate;
+        m_edge = edge;
+        m_timer = new QTimer(this);
+        connect(m_timer, SIGNAL(timeout()), this, SLOT(checkPinState()));
+        m_timer->start(timeout);
+    }
 }
 
 void Gpio::removeTrigger()

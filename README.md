@@ -1,4 +1,6 @@
 # Qt/C++ examples for Raspberry Pi
+Install Qt development environment:
+sudo apt install qtcreator qt5-default
 
 ## qt-01
 Simple test program without ui forms.

@@ -43,7 +43,7 @@ color: rgb(0, 255, 0);
    <item row="1" column="1">
     <widget class="QLCDNumber" name="temp2">
      <property name="styleSheet">
-      <string notr="true">color: rgb(0, 254 6);
+      <string notr="true">color: rgb(0, 255, 0);
 background-color: rgb(0, 0, 0);</string>
      </property>
      <property name="digitCount">

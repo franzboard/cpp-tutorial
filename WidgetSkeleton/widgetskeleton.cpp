@@ -17,7 +17,7 @@ WidgetSkeleton::WidgetSkeleton(QWidget *parent): QWidget(parent)
   setLayout(grid);  
   
   // Signal -> slot
-  connect(sendBtn, &QPushButton::clicked, this, &WidgetSkeleton::SayHello);
+  connect(sendBtn, &QPushButton::clicked, this, &WidgetSkeleton::sayHello);
 }
 
 void WidgetSkeleton::sayHello() 

@@ -38,3 +38,10 @@ Widget for reading ds18x20 onewire sensor values.
 
 ## examples
 Some additional examples
+
+## Skeletons 
+- WidgetSkeleton
+- QmlSkeleton
+
+Simple setups for getting started without QtCreator
+
